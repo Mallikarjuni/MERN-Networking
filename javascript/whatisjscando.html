@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">this is paragraph 1</p>
+    <p id="p2" style="background-color: red;">this is paragraph 2</p>
+
+    <img id="i1" src="mail.png" height="200px" width="200px">
+    <button onclick="changeContent()">click me to change html content</button> <br>
+    <button onclick="documentOutput()">documentOutput</button> <br>
+    <button onclick="alertoutput()">window</button> <br>
+    
+    <button onclick="changeAttributeValue()">imag</button> <br>
+    <button onclick="changeCss()">css</button> <br>
+<script>
+    function changeContent()
+    {
+        document.getElementById('p1').innerHTML="hello world";
+
+    }
+    function documentOutput()
+    {
+        document.write("this is document output");
+
+    }
+
+    function alertoutput()
+    {
+        window.alert("window alert");
+    }
+    function consoleOut()
+    {
+        console.log("go to console");
+    }
+    
+    function changeAttributeValue()
+    {
+        document.getElementById('i1').src="linkdin.png";
+    }
+
+    function changeCss()
+    {
+        document.getElementById('p2').style.backgroundColor='yellow';
+    }
+</script>
+    
+</body>
+</html>
